@@ -1,4 +1,4 @@
-/*Imagine you work for Crayola and your boss just told you that the Crayola1990 API needs to have a url slug generated for all of the colors names.
+/*Imagine you work for Crayola and your boss just told you that the Crayola1990 API needs to have a url slug generated for all of the colors names. URL slug: takes normal word formatting and turns it into something a browser can URL, like putting %20 in a space. So, to have a good URL slug: No spaces betweeen words or characters; no uppercase letters
 * To do this you need to lowercase and hyphenate each color in the following array.
 * You can not edit the values in the array by hand as your boss is wanting a loop that can be applied to any set of crayola boxes in the future
 */
@@ -59,6 +59,14 @@ var crayola1990 = [
 ];
 
 //create a loop that will iterate over each item in the array and then use the String methods to modify the value at the current position in the array
+
+for (var i = 0; i < crayola1990.length; i++) {
+
+crayola1990[i] = crayola1990[i].toLowerCase();
+}
+
+crayola1990;
+
 
 /***** HINTS *******
  * remember strings are immutable but the value of a variable can be adjusted as often as needed.
